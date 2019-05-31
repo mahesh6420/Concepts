@@ -1,0 +1,43 @@
+@model MasterDetailFormConcept.Models.Customer
+
+<h4>Customer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerAddress.PermanentToleName" class="control-label"></label>
+                <input asp-for="CustomerAddress.PermanentToleName" class="form-control" />
+                <span asp-validation-for="CustomerAddress.PermanentToleName" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="CustomerAddress.PermanentWardNo" class="control-label"></label>
+                <input asp-for="CustomerAddress.PermanentWardNo" class="form-control" />
+                <span asp-validation-for="CustomerAddress.PermanentWardNo" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="CustomerAddress.TemporaryToleName" class="control-label"></label>
+                <input asp-for="CustomerAddress.TemporaryToleName" class="form-control" />
+                <span asp-validation-for="CustomerAddress.TemporaryToleName" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="CustomerAddress.TemporaryToleName" class="control-label"></label>
+                <input asp-for="CustomerAddress.TemporaryToleName" class="form-control" />
+                <span asp-validation-for="CustomerAddress.TemporaryToleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
